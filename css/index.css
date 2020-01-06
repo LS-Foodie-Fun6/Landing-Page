@@ -135,4 +135,64 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: darkgoldenrod;
+}
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+header .headerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  font-size: 2.5rem;
+  margin: 5%;
+}
+header .headerText span {
+  color: darkgoldenrod;
+  font-size: 1.5rem;
+}
+header h1 {
+  font-size: 3.5rem;
+  margin: 2%;
+}
+header .callToAction {
+  background-color: #d45a22;
+  padding: 30px 130px;
+  font-size: 2.5rem;
+  border: none;
+  color: orange;
+}
+section p {
+  padding: 0 10%;
+  font-size: 2rem;
+}
+footer {
+  text-align: center;
+  font-size: 1.25rem;
 }
