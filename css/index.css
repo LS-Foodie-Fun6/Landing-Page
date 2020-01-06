@@ -188,11 +188,22 @@ header .callToAction {
   border: none;
   color: orange;
 }
-section p {
+section {
   padding: 0 10%;
+}
+section h2 {
+  font-size: 2.5rem;
+  margin: 2% 0;
+}
+section p {
+  font-size: 2rem;
+}
+section ul li {
+  color: goldenrod;
   font-size: 2rem;
 }
 footer {
   text-align: center;
   font-size: 1.25rem;
+  margin: 5% 0;
 }
