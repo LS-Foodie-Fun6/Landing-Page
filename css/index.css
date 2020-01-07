@@ -135,27 +135,30 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background-color: black;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a {
-  color: darkgoldenrod;
+  background-color: #ffffff;
 }
 nav {
-  background-color: transparent;
+  margin: 0 auto;
+  background-color: #e5625e;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 30px;
+  height: 70px;
+}
+nav span {
+  color: #ffffff;
+  font-size: 3rem;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
 }
 nav a {
   text-decoration: none;
   font-size: 1.7rem;
+  color: #ffffff;
 }
 header {
   display: flex;
@@ -163,6 +166,7 @@ header {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background-color: #ffffff;
 }
 header .headerText {
   display: flex;
@@ -172,38 +176,46 @@ header .headerText {
   line-height: 2;
   font-size: 2.5rem;
   margin: 5%;
+  color: #999799;
 }
 header .headerText span {
-  color: darkgoldenrod;
   font-size: 1.5rem;
 }
 header h1 {
-  font-size: 3.5rem;
-  margin: 2%;
+  color: #e5625e;
+  font-size: 4rem;
+  margin: 3% 0;
+}
+header h2 {
+  font-size: 2.25rem;
+  font-style: italic;
+  margin: 3% 0;
+  color: #999799;
 }
 header .callToAction {
-  background-color: #d45a22;
+  background-color: #bdd358;
   padding: 30px 130px;
   font-size: 2.5rem;
   border: none;
-  color: orange;
+  color: #ffffff;
 }
 section {
   padding: 0 10%;
+  color: #999799;
 }
-section h2 {
-  font-size: 2.5rem;
+section h3 {
+  font-size: 2.15rem;
   margin: 2% 0;
 }
 section p {
   font-size: 2rem;
 }
 section ul li {
-  color: goldenrod;
   font-size: 2rem;
 }
 footer {
   text-align: center;
   font-size: 1.25rem;
   margin: 5% 0;
+  color: #999799;
 }
