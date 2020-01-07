@@ -1,19 +1,49 @@
 section {
-    padding: 0 10%;
+    
+    // padding: 0 10%;
     color: @gray;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 2% 0;
+    width: 80%;
+    border-bottom: 1px dotted @green;
 
     h3 {
-        font-size: 2.15rem;
-        margin: 2% 0;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2%;
+        color: @green;
+        font-weight: bold;
+       
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     ul li {
+        list-style: disc;
+        list-style-position: inside;
+        font-size: 1.75rem;
         
-        font-size: 2rem;
     }   
+
+    div {
+        width: 33%;
+        display: inline-block;
+
+        img {
+            .responsiveImg();
+        }
+    }
     
+}
+
+#sign-up {
+    text-align: center;
+
+    button {
+        .callToActionButton();
+        margin-bottom: 0;
+    }
 }
