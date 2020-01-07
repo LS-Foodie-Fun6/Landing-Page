@@ -1,19 +1,46 @@
 header {
-    .flexThis(center, center);
-    flex-direction: column;
-    height: 100vh;
+    .flexThis(space-between, center);
+    flex-direction: row;
+    height: 85vh;
     background-color: @white;
-    
+    max-width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px dotted @green;
+
     .headerText {
-        .flexThis(center, center);
+        width: 40%;
+        border: 1px solid black;
+        .flexThis(space-evenly, center);
+        text-align: center;
         flex-direction: column;
+        max-height: 100%;
         line-height: 2;
         font-size: 2.5rem;
         margin: 5%;
         color: @gray;
 
-        span {
-          
+    }
+
+    // clean this up
+
+    .headerImg {
+        width: 60%;
+        border: 1px solid black;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    
+    
+    .headerText {
+        .flexThis(center, center);
+        flex-direction: column;
+       
+
+        span {          
             font-size: 1.5rem;
         }
     }

@@ -1,28 +1,22 @@
 nav {
+  margin: 0 auto;
+  background-color: @red;
+  .flexThis(space-evenly, center);
+  height: 15vh;
 
-    margin: 0 auto;
-    background-color: @red;
+  span {
+    color: @white;
+    font-size: 3rem;
+  }
+
+  div {
     .flexThis(space-evenly, center);
-    height: 70px;
- 
+    width: 40%;
+  }
 
-    span {
-        color: @white;
-        font-size: 3rem;
-       
-    }
-
- 
-
-    div {
-        .flexThis(space-evenly, center);
-        width: 40%;
-    }
-        
-        a {
-        text-decoration: none;
-        font-size: 1.7rem;
-        color: @white;
-    }
-
+  a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: @white;
+  }
 }
