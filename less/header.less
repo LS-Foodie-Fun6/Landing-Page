@@ -7,16 +7,23 @@ header {
     margin: 0 auto;
     border-bottom: 1px dotted @green;
 
+    @media (max-width: 500px) {
+        flex-direction: column;
+        min-height: 100%;
+      }
+
     .headerText {
         width: 40%;
-        
         .flexThis(space-evenly, center);
         text-align: center;
         flex-direction: column;
-        // max-height: 100%;
         line-height: 2;
-        // font-size: 2.5rem;
         margin: 5%;
+
+        @media (max-width: 500px) {
+            width: 100%;
+            
+          }
         
         h1 {
             color: @red;
@@ -37,6 +44,9 @@ header {
     .headerImg {
         width: 55%;
         
+        @media (max-width: 500px) {
+            width: 95%;
+          }
 
         img {
             .responsiveImg();
@@ -46,5 +56,9 @@ header {
     
     button {
         .callToActionButton();
+
+        @media (max-width: 500px) {
+            margin: 0;
+          }
     }
 }
