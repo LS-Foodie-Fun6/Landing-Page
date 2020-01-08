@@ -1,79 +1,67 @@
 section {
-    
-    // padding: 0 10%;
-    color: @gray;
-    line-height: 1.5;
-    margin: 0 auto;
-    padding: 2% 0;
-    width: 80%;
-    border-bottom: 1px dotted @green;
+  // padding: 0 10%;
+  color: @gray;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 2% 0;
+  width: 80%;
+  border-bottom: 1px dotted @green;
 
-    h3 {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 2%;
-        color: @green;
-        font-weight: bold;
-       
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2%;
+    color: @green;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+
+  ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 1.75rem;
+  }
+
+  div.img-container {
+    width: 33%;
+    display: inline-block;
+
+    img {
+      .responsiveImg();
     }
-
-    p {
-        font-size: 1.75rem;
-    }
-
-    ul li {
-        list-style: disc;
-        list-style-position: inside;
-        font-size: 1.75rem;
-        
-    }   
-
-    div.img-container {
-        width: 33%;
-        display: inline-block;
-
-        img {
-            .responsiveImg();
-        }
-    }
-    
+  }
 }
 
 #sign-up {
-    text-align: center;
+  text-align: center;
 
-    button {
-        .callToActionButton();
-        margin-bottom: 0;
-    }
+  button {
+    .callToActionButton();
+    margin-bottom: 0;
+  }
 }
 
 #img-gallery {
-    @media (max-width: 500px) {
-        display: none;
-      }
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 #about {
+  div.contain {
+    .flexThis(space-between, center);
+    flex-flow: row wrap;
 
-    div.contain {
-        .flexThis(space-between, center);
-        flex-flow: row wrap;
+    .team {
+      .flexThis(space-between, center);
+      flex-direction: column;
 
-        .team{
-            .flexThis(space-between, center);
-            flex-direction: column;
-
-            .teammate {
-                max-width: 150px;
-            }
-        }
-
-        
+      .teammate {
+        max-width: 150px;
+      }
     }
-    
-
-
-
-    
+  }
 }
