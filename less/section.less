@@ -28,7 +28,7 @@ section {
         
     }   
 
-    div {
+    div.img-container {
         width: 33%;
         display: inline-block;
 
@@ -52,4 +52,28 @@ section {
     @media (max-width: 500px) {
         display: none;
       }
+}
+
+#about {
+
+    div.contain {
+        .flexThis(space-between, center);
+        flex-flow: row wrap;
+
+        .team{
+            .flexThis(space-between, center);
+            flex-direction: column;
+
+            .teammate {
+                max-width: 150px;
+            }
+        }
+
+        
+    }
+    
+
+
+
+    
 }
