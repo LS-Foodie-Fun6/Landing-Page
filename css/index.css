@@ -149,6 +149,7 @@ nav {
     flex-direction: column;
     height: 100%;
     padding: 2%;
+    background-color: #e5625e;
   }
 }
 nav a {
@@ -162,11 +163,18 @@ nav a {
   nav a {
     font-size: 2rem;
     margin: 2% 0;
+    color: #ffffff;
+    font-weight: normal;
   }
 }
 nav img {
   max-height: 80%;
   margin-right: 10%;
+}
+@media (max-width: 500px) {
+  nav img {
+    display: none;
+  }
 }
 header {
   display: flex;
@@ -355,9 +363,13 @@ section div.img-container img {
   align-items: center;
   flex-direction: column;
   margin: 20px auto;
+  border: 1px solid #bdd358;
+}
+#about div.contain .team p:nth-child(2) {
+  font-weight: bold;
 }
 #about div.contain .team .teammate {
-  max-width: 150px;
+  max-width: 250px;
   margin: 5px 0;
 }
 footer {
