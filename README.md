@@ -1,4 +1,11 @@
 # Landing-Page
-FoodieFun marketing webpage
+FoodieFun was a week-long project built and launched by a team of 5 developers + our awesome project lead.
 
-[Live Demo](https://ls-foodie-fun6.github.io/Landing-Page/) available here
+As our team's sole UI Web Developer, my job was to put together a marketing site/landing page for the app.
+
+While we had some design mockups going into this project, we decided to make some significant changes,
+so in addition to UI development I took on some design responsibilities as well.
+
+The marketing site is responsive, and was built with HTML and CSS/LESS.
+
+[Live Demo](https://ls-foodie-fun6.github.io/Landing-Page/) is available here.
