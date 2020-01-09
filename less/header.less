@@ -7,12 +7,17 @@ header {
   margin: 0 auto;
   border-bottom: 1px dotted @green;
 
-  @media (max-width: 800px){
+  @media @desktop {
+    .flexThis(space-around, center);
+    flex-direction: column;
+  }
+
+  @media @tablet{
     flex-direction: column;
     min-height: 100%;
   }
 
-  @media (max-width: 500px) {
+  @media @phone {
     flex-direction: column;
     min-height: 100%;
   }
@@ -25,11 +30,17 @@ header {
     line-height: 2;
     margin: 5%;
 
-    @media (max-width: 800px) {
+    @media @desktop {
+      padding: 5px;
+      margin: 5px;
+      width: 70%;
+    }
+
+    @media @tablet {
       width: 100%;
     }
 
-    @media (max-width: 500px) {
+    @media @phone {
       width: 100%;
     }
 
@@ -42,11 +53,11 @@ header {
       font-size: 2.5rem;
       margin: 5%;
 
-      @media (max-width: 800px) {
+      @media @tablet {
         font-size: 2rem;
       }
 
-      @media (max-width: 500px) {
+      @media @phone {
         font-size: 2rem;
       }
     }
@@ -55,11 +66,11 @@ header {
   .headerImg {
     width: 55%;
 
-    @media (max-width: 800px) {
+    @media @tablet {
       width: 95%;
     }
 
-    @media (max-width: 500px) {
+    @media @phone {
       width: 95%;
     }
 
@@ -71,7 +82,7 @@ header {
   a {
     .callToActionButton();
 
-    @media (max-width: 500px) {
+    @media @phone {
       margin: 0;
     }
   }

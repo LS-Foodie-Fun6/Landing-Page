@@ -1,54 +1,49 @@
-nav {
-  
+nav {  
   background-color: @red;
-  .flexThis(flex-end, center);
-  height: 12vh;
+  .flexThis(flex-end, flex-end);
+  height: 15vh;
 
-  @media (max-width: 500px) {
-    padding: 15px 0;
+  @media @tablet {
+    height: 10vh;
+  }
+
+  @media @phone {
+    padding: 5px 0;
   }
   
-
-  
-
   div {
     .flexThis(center, center);
     width: 40%;
 
-    @media (max-width: 500px) {
+    @media @tablet {
       flex-direction: column;
       width: 100%;
       height: 100%;
-     
-      background-color: @red;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
     }
 
     a {
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 2rem;
       color: @white;
-      // font-weight: bold;
       margin-right: 5%;
+      padding-bottom: 5px;
+
+      @media @tablet {
+        margin: 5px 0;
+      }
   
-      @media (max-width: 500px) {
+      @media @phone {
         font-size: 2rem;
         margin: 2% 0;
         color: @white;
         font-weight: normal;
       }
+    }
   }
-
-  
-
-    
-  }
-
-  // img {
-  //   max-height: 80%;
-  //   margin-right: 10%;
-
-  //   @media (max-width: 500px){
-  //     display: none;
-  //   }
-  // }
 }
