@@ -135,75 +135,265 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background-color: black;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a {
-  color: darkgoldenrod;
+  background-color: #ffffff;
 }
 nav {
-  background-color: transparent;
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  height: 30px;
+  height: 12vh;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    height: 100%;
+    padding: 2%;
+    background-color: #e5625e;
+  }
 }
 nav a {
   text-decoration: none;
   font-size: 1.7rem;
+  color: #e5625e;
+  font-weight: bold;
+  margin-right: 3%;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+    margin: 2% 0;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+nav img {
+  max-height: 80%;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  nav img {
+    display: none;
+  }
 }
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
+  min-height: 85vh;
+  background-color: #ffffff;
+  max-width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dotted #bdd358;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    min-height: 100%;
+  }
 }
 header .headerText {
+  width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   line-height: 2;
+  margin: 5%;
+}
+@media (max-width: 800px) {
+  header .headerText {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header .headerText {
+    width: 100%;
+  }
+}
+header .headerText h1 {
+  display: none;
+}
+header .headerText h2 {
+  color: #999799;
   font-size: 2.5rem;
   margin: 5%;
 }
-header .headerText span {
-  color: darkgoldenrod;
-  font-size: 1.5rem;
+@media (max-width: 800px) {
+  header .headerText h2 {
+    font-size: 2rem;
+  }
 }
-header h1 {
-  font-size: 3.5rem;
-  margin: 2%;
+@media (max-width: 500px) {
+  header .headerText h2 {
+    font-size: 2rem;
+  }
 }
-header .callToAction {
-  background-color: #d45a22;
-  padding: 30px 130px;
-  font-size: 2.5rem;
+header .headerImg {
+  width: 55%;
+}
+@media (max-width: 800px) {
+  header .headerImg {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  header .headerImg {
+    width: 95%;
+  }
+}
+header .headerImg img {
+  width: 100%;
+  height: auto;
+}
+header a {
+  background-color: #bdd358;
+  min-width: 250px;
+  min-height: 40px;
+  padding: 20px;
+  font-size: 2.25rem;
   border: none;
-  color: orange;
+  color: #ffffff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  header a {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  header a {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  header a {
+    margin: 0;
+  }
 }
 section {
-  padding: 0 10%;
+  color: #999799;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 2% 0;
+  width: 60%;
+  border-bottom: 1px dotted #bdd358;
 }
-section h2 {
-  font-size: 2.5rem;
-  margin: 2% 0;
+@media (max-width: 800px) {
+  section {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    width: 95%;
+  }
+}
+section h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #bdd358;
+  font-weight: bold;
 }
 section p {
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+section p:nth-child(1) {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #bdd358;
+  font-weight: bold;
 }
 section ul li {
-  color: goldenrod;
-  font-size: 2rem;
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.75rem;
+}
+section div.img-container {
+  width: 33%;
+  display: inline-block;
+}
+section div.img-container img {
+  width: 100%;
+  height: auto;
+}
+#sign-up {
+  text-align: center;
+}
+#sign-up a {
+  background-color: #bdd358;
+  min-width: 250px;
+  min-height: 40px;
+  padding: 20px;
+  font-size: 2.25rem;
+  border: none;
+  color: #ffffff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  #sign-up a {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  #sign-up a {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  #sign-up a {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 800px) {
+  #img-gallery {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #img-gallery {
+    display: none;
+  }
+}
+#about div.contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#about div.contain .team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+  border: 1px solid #bdd358;
+}
+#about div.contain .team p:nth-child(2) {
+  font-weight: bold;
+}
+#about div.contain .team .teammate {
+  max-width: 250px;
+  margin: 5px 0;
 }
 footer {
   text-align: center;
   font-size: 1.25rem;
   margin: 5% 0;
+  color: #999799;
 }

@@ -1,31 +1,78 @@
 header {
-    .flexThis(center, center);
-    flex-direction: column;
-    height: 100vh;
-    
-    .headerText {
-        .flexThis(center, center);
-        flex-direction: column;
-        line-height: 2;
-        font-size: 2.5rem;
-        margin: 5%;
+  .flexThis(space-between, center);
+  flex-direction: row;
+  min-height: 85vh;
+  background-color: @white;
+  max-width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dotted @green;
 
-        span {
-            color: darkgoldenrod;
-            font-size: 1.5rem;
-        }
+  @media (max-width: 800px){
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .headerText {
+    width: 40%;
+    .flexThis(space-evenly, center);
+    text-align: center;
+    flex-direction: column;
+    line-height: 2;
+    margin: 5%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
     }
 
     h1 {
-        font-size: 3.5rem;
-        margin: 2%;
+      display: none;
     }
 
-    .callToAction {
-        background-color: rgb(212, 90, 34);
-        padding: 30px 130px;
-        font-size: 2.5rem;
-        border: none;
-        color: orange;
+    h2 {
+      color: @gray;
+      font-size: 2.5rem;
+      margin: 5%;
+
+      @media (max-width: 800px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
     }
+  }
+
+  .headerImg {
+    width: 55%;
+
+    @media (max-width: 800px) {
+      width: 95%;
+    }
+
+    @media (max-width: 500px) {
+      width: 95%;
+    }
+
+    img {
+      .responsiveImg();
+    }
+  }
+
+  a {
+    .callToActionButton();
+
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
 }
