@@ -144,11 +144,6 @@ nav {
   align-items: flex-end;
   height: 15vh;
 }
-@media (max-width: 800px) {
-  nav {
-    height: 10vh;
-  }
-}
 @media (max-width: 500px) {
   nav {
     padding: 5px 0;
@@ -251,6 +246,10 @@ header .headerText {
   header .headerText {
     width: 100%;
   }
+}
+header .headerText img {
+  width: 100%;
+  height: auto;
 }
 header .headerText h1 {
   display: none;
@@ -446,7 +445,6 @@ section div.img-container img {
 footer {
   text-align: center;
   font-size: 1.25rem;
-  margin: 5% 0;
+  margin: 15px 0;
   color: #999799;
-  margin-bottom: 5px;
 }
