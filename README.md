@@ -8,4 +8,4 @@ so in addition to UI development I took on some design responsibilities as well.
 
 The marketing site is responsive, and was built with HTML and CSS/LESS.
 
-[Live Demo](https://ls-foodie-fun6.github.io/Landing-Page/) is available here.
+[Live Demo](https://cranky-snyder-f61439.netlify.com/) is available here.
